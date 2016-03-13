@@ -1,0 +1,73 @@
+//
+// Bootstrap base Theme Variables override
+// --------------------------------------------------
+
+// Site main color
+@main-color-default : #343434;
+@main-color-black : #000;
+@main-color-light-blue : #3498db;
+@main-color-dark-blue : #2c3e50;
+@main-color-red : #e74c3c;
+@main-color-orange : #f39c12;
+@main-color-green : #16a085;
+@main-color-violet : #8e44ad;
+
+
+
+@brand-primary:         @main-color-light-blue; //#343434 by default
+
+// Fonts
+@font-family-sans-serif:  'Open Sans', Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+
+// Links
+@link-color:            darken(@brand-primary,15%); // lighten for black themes and default - darken for color themes
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 10%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+// Logo (SVG) fill colors
+
+@main-logo-path-color : @brand-primary;
+
+// Logo 
+// Small text into logo
+@main-logo-small-etext-color: @brand-primary;
+
+//== Navbar
+//Navbar brand
+@navbar-brand-link-color: @brand-primary; // #000 by default and for black theme
+
+
+// Basics of a navbar
+@navbar-default-link-color:                #343434;
+@navbar-default-link-hover-color:          @brand-primary; // #000 by default
+
+
+// Light Theme Special variables
+@home-jumbotron-border-top-width : 2px; // 0px by default - 2px for not black color themes
+@home-jumbotron-border-top-color:  @brand-primary; // transparent by default
+
+// Links
+
+// Buttons
+@btn-primary-bg:                 @brand-primary; //darken(@brand-primary, 10%) by default
+
+// btn default
+@btn-default-color: #000;
+@btn-default-hover-bg: @brand-primary; // #d3fefb by default and for black theme
+@btn-default-hover-color: #fff; // #000 by default and for black theme - #fff for color themes
+
+//btn hero
+@btn-hero-bg: @brand-primary; // #000 by default
+@btn-hero-color: #fff; // #fff by default
+
+// Border radius
+@border-radius-base:        0;
+@border-radius-large:       0;
+@border-radius-small:       0;
+
+//Portfolio nav pills
+@folio-nav-pills-active-color : darken(@brand-primary, 10%);

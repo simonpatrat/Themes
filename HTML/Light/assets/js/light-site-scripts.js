@@ -1,9 +1,13 @@
+// Addind javascript class on body before dom ready
+document.body.className += " bswjs";
+
 var siteScripts = function() {
-    
+
     // Initialize wow.js
     new WOW().init();
     // set isBoxed variable
-    var isBoxed = localStorage.getItem("is_boxed");     
+    var isBoxed = localStorage.getItem("is_boxed");
+
     // Home image jumbotron dynamic height - Only if site hasn't the boxed layout
     var jumboSetHeight = function() {    
 
@@ -116,6 +120,11 @@ var siteScripts = function() {
     });    
     
 
+    // Loader and page transition on load when images have loaded
+    $('.whole-site').imagesLoaded( function() {
+        // images have loaded
+        $('.loading-site').addClass('site-loaded');
+    });
 
     // Google map init
     initMap();
@@ -186,6 +195,7 @@ function initMap() {
 
   
 }; // End of initMap function
+
 
 // Init site scripts
 $(document).ready(siteScripts);

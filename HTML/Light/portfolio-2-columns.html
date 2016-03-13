@@ -99,12 +99,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
-                        <li class="active" role="presentation"><a href="index.html">home </a></li>
+                        <li role="presentation"><a href="index.html">home </a></li>
                         <li role="presentation"><a href="about.html">about </a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Portfolio <span class="caret"></span></a>
+                        <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Portfolio <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="portfolio.html">Portfolio 3 columns</a></li>
-                                <li><a href="portfolio-2-columns.html">Portfolio 2 columns</a></li>
+                                <li class="active"><a href="portfolio-2-columns.html">Portfolio 2 columns</a></li>
                                 <li><a href="portfolio-4-columns.html">Portfolio 4 columns</a></li>
                                 <li><a href="portfolio-4-columns-no-padding.html">Portfolio 4 columns no-padding</a></li>
                             </ul>
@@ -135,199 +135,219 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="folio-filter-container text-center">
-                                <ul class="nav nav-pills folio-filter text-center">
-                                    <li class="active" role="presentation"> <a href="#">All </a></li>
-                                    <li> <a href="#">Web design </a></li>
-                                    <li> <a href="#">Web </a></li>
-                                    <li> <a href="#">Print </a></li>
-                                </ul>
+        <section class="portfolio-gallery-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="folio-filter-container text-center wow fadeIn">
+                                    <ul class="nav nav-pills folio-filter text-center">
+                                        <li class="active" role="presentation"><a class="btn" href="#" data-filter="*">All</a></li>
+                                        <li><a class="btn" href="#" data-filter=".web-design">Web design</a></li>
+                                        <li><a <a class="btn" href="#" data-filter=".print">Print</a></li>
+                                        <li><a <a class="btn" href="#" data-filter=".illustration">Illustration</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row margin-bottom-medium">
-                        <div class="col-md-12 no-padding">
-                            <div class="_bswidget bsw-image-gallery list-group gallery">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x300.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Lorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                        <div class="row margin-bottom-medium">
+                            <div class="col-md-12 no-padding">
+                                <div class="_bswidget bsw-image-gallery list-group gallery">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item web-design">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f11.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f11.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x800.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Project Lorem</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item illustration">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f1.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f1.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x600.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Ipsum Project</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item print">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f2.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f2.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x800.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Ipsum Lorem</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item print">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f3.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f3.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x800.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Project Name ILorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item web-design">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f5.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f5.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x600.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Project Lorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item print">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f7.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f7.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x300.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Lorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item web-design">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f4.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f4.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x600.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Project Lorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item print">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f6.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f6.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x800.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Project Name ILorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item illustration">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f8.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f8.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/600x600.png">
-                                        <div class="text-center bsw-gallery-caption pos-absolute">
-                                            <div class="bsw-caption-project-name"><small>Project Lorem Ipsum</small>
-                                                <div class="bsw-caption-project-links margin-top-small">
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                            <a href="http://placehold.it/800x600.png" class="fancybox"> <i class="fa fa-search-plus"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item print">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f9.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f9.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bsw-masonry-item web-design">
+                                        <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f10.jpg">
+                                            <div class="text-center bsw-gallery-caption pos-absolute">
+                                                <div class="bsw-caption-project-name"><small>Text</small>
+                                                    <div class="bsw-caption-project-links margin-top-small">
+                                                        <ul class="list-inline">
+                                                            <li>
+                                                                <a href="assets/img/portfolio/f10.jpg" class="fancybox" rel="gallery1"> <i class="fa fa-search-plus"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio-post.html"> <i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -337,8 +357,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </section>
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
@@ -404,10 +424,13 @@
         </footer>
     </div>
     <button class="btn btn-default pos-fixed gototop btn-icon-medium" type="button" data-change="goToTop" data-toggle="tooltip" data-placement="left" title="Back to top"> <i class="fa fa-angle-up"></i></button>
+    <div class="loading-site"></div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/Images-gallery-with-fancybox-and-masonry.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>

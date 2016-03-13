@@ -6985,6 +6985,7 @@ a.navbar-brand.navbar-link {
   padding: 0 10px;
   color: #000;
   text-transform: uppercase;
+  font-weight: 800;
 }
 .navbar.affix a.navbar-brand.navbar-link {
   opacity: 1;
@@ -7802,6 +7803,24 @@ textarea.form-control {
 #style-switcher.visible {
   transform: translateX(0);
 }
+#style-switcher .btn,
+#style-switcher .btn.btn-default {
+  border: 2px solid #ccc !important;
+  background: #fff;
+  color: #343434;
+}
+#style-switcher .btn:hover,
+#style-switcher .btn.btn-default:hover,
+#style-switcher .btn:active,
+#style-switcher .btn.btn-default:active,
+#style-switcher .btn:focus,
+#style-switcher .btn.btn-default:focus {
+  color: #000;
+}
+#style-switcher .btn.toggle-style-switcher,
+#style-switcher .btn.btn-default.toggle-style-switcher {
+  border: none !important;
+}
 .style-switcher-inner {
   padding: 10px;
 }
@@ -7853,7 +7872,9 @@ textarea.form-control {
 .style-switcher-inner .color-list li.violet {
   background: #8e44ad;
 }
-.toggle-style-switcher {
+.toggle-style-switcher,
+.btn.toggle-style-switcher,
+.btn.btn.default.toggle-style-switcher {
   position: absolute;
   right: -36px;
   height: 38px;
@@ -7866,10 +7887,16 @@ textarea.form-control {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 .toggle-style-switcher:focus,
-.toggle-style-switcher:active {
+.btn.toggle-style-switcher:focus,
+.btn.btn.default.toggle-style-switcher:focus,
+.toggle-style-switcher:active,
+.btn.toggle-style-switcher:active,
+.btn.btn.default.toggle-style-switcher:active {
   outline: none;
 }
-#style-switcher.visible .toggle-style-switcher {
+#style-switcher.visible .toggle-style-switcher,
+#style-switcher.visible .btn.toggle-style-switcher,
+#style-switcher.visible .btn.btn.default.toggle-style-switcher {
   right: 0;
   box-shadow: none;
 }
