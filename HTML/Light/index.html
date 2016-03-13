@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/Team-preview-thumbnails-carousel.css">
     <link rel="stylesheet" href="assets/css/flickity.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" data-style-switcher-color="true" href="styles.css">
 </head>
 
 <body>
@@ -28,8 +28,8 @@
             <div class="change-colors">
                 <h5>Change colors</h5>
                 <ul class="color-list list-unstyled list-inline">
-                    <li class="black selected" data-style="black" title="Black"><i class="fa fa-tint"></i></li>
-                    <li class="light-blue" data-style="light_blue" title="Light Blue"><i class="fa fa-tint"></i></li>
+                    <li class="black selected" data-style="default" title="Black"><i class="fa fa-tint"></i></li>
+                    <li class="light-blue" data-style="light-blue" title="Light Blue"><i class="fa fa-tint"></i></li>
                     <li class="dark-blue" data-style="dark-blue" title="Dark Blue"><i class="fa fa-tint"></i></li>
                     <li class="red" data-style="red" title="Red"><i class="fa fa-tint"></i></li>
                     <li class="orange" data-style="orange" title="Orange"><i class="fa fa-tint"></i></li>
@@ -99,16 +99,15 @@
         <nav class="navbar navbar-default" id="mainNav">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand navbar-link" href="#">
-                        <strong>Light</strong>
-                    </a>
+                    <a class="navbar-brand navbar-link" href="#">Light</a>
+                    
                     <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
-                        <li class="active" role="presentation"><a href="index.html">home </a></li>
-                        <li role="presentation"><a href="about.html">about </a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Portfolio <span class="caret"></span></a>
+                        <li class="active" role="presentation"><a href="index.html">home</a></li>
+                        <li role="presentation"><a href="about.html">about</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Portfolio<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="portfolio.html">Portfolio 3 columns</a></li>
                                 <li><a href="portfolio-2-columns.html">Portfolio 2 columns</a></li>
@@ -116,23 +115,29 @@
                                 <li><a href="portfolio-4-columns-no-padding.html">Portfolio 4 columns no-padding</a></li>
                             </ul>
                         </li>
-                        <li role="presentation"><a href="blog.html">blog </a></li>
-                        <li role="presentation"><a href="contact.html">Contact </a></li>
+                        <li role="presentation"><a href="blog.html">blog</a></li>
+                        <li role="presentation"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container-fluid no-padding">
             <div class="jumbotron pos-relative image-jumbo home-image-jumbo text-center">
-                <div class="jumbo-box box-white-bordered">
-                    <h1 class="text-center pos-absolute centered-top-absolute">Heading</h1></div>
+                
+                <div class="home-hero-box">
+                    <h1 class="text-center home-hero-text home-hero-title text-bg-white wow fadeInUp">Light <small>Html5 Bootstrap theme</small></h1>
+                    <div class="wow fadeInUp">
+                        <p class="home-hero-text text-bg-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><button class="btn btn-primary btn-hero" data-change="scrollToTopContent">Scroll down <i class="fa fa-angle-down"></i></button></p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-push-3">
-                    <div class="text-center centered-text-block margin-bottom-large padding-bottom-medium padding-top-medium margin-top-small">
-                        <h3 class="margin-bottom-medium">Presentation </h3>
+                    <div id="top-content" class="text-center centered-text-block bordered-bottom margin-bottom-large padding-bottom-medium padding-top-medium margin-top-small wow fadeIn">
+                        <h3 class="margin-bottom-medium">Presentation</h3>
                         <p class="text-left">Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing elit</a>. Vestibulum sit amet arcu et lacus scelerisque lobortis. In congue tortor et posuere dapibus. Maecenas dignissim, sapien in tincidunt vestibulum, odio risus gravida tellus,
                             et venenatis urna nunc vitae nunc. Vivamus ac turpis ut odio interdum tempus. </p>
                     </div>
@@ -142,7 +147,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="gallery-header text-center">
+                    <div class="gallery-header text-center wow fadeIn">
                         <h2>Portfolio </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     </div>
@@ -152,7 +157,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="folio-filter-container text-center">
+                            <div class="folio-filter-container text-center wow fadeIn">
                                 <ul class="nav nav-pills folio-filter text-center">
                                     <li class="active" role="presentation"><a class="btn" href="#" data-filter="*">All</a></li>
                                     <li><a class="btn" href="#" data-filter=".web-design">Web design</a></li>
@@ -166,7 +171,7 @@
                         <div class="col-md-12 no-padding">
                             <div class="_bswidget bsw-image-gallery list-group gallery">
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item web-design">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f11.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f11.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -184,7 +189,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item illustration">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f1.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f1.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -202,7 +207,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item print">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f2.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f2.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -220,7 +225,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item print">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f3.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f3.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -238,7 +243,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item web-design">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f5.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f5.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -256,7 +261,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item print">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f7.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f7.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -274,7 +279,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item web-design">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f4.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f4.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -292,7 +297,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item print">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f6.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f6.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -310,7 +315,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item illustration">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f8.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f8.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -328,7 +333,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item print">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f9.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f9.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -346,7 +351,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bsw-masonry-item web-design">
-                                    <div class="thumbnail pos-relative"><img class="img-responsive" src="assets/img/portfolio/f10.jpg">
+                                    <div class="thumbnail pos-relative wow fadeInUp"><img class="img-responsive" src="assets/img/portfolio/f10.jpg">
                                         <div class="text-center bsw-gallery-caption pos-absolute">
                                             <div class="bsw-caption-project-name"><small>Text</small>
                                                 <div class="bsw-caption-project-links margin-top-small">
@@ -367,7 +372,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 text-center padding-bottom-medium"><a class="btn btn-default" role="button" href="portfolio.html">More on portfolio page</a></div>
+                        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 text-center padding-bottom-medium"><a class="btn btn-default wow fadeIn" role="button" href="portfolio.html">More on portfolio page</a></div>
                     </div>
                 </div>
             </div>
@@ -375,7 +380,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-push-3">
-                    <div class="centered-text-block text-center padding-top-medium padding-bottom-medium margin-top-medium">
+                    <div class="centered-text-block bordered-top-bottom text-center padding-top-medium padding-bottom-medium margin-top-medium wow fadeIn">
                         <h3>Blockquote </h3>
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -394,13 +399,13 @@
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><a class="btn btn-default btn-block" role="button" href="blog.html">To the blog</a></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 text-left"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                        <div class="col-lg-4 col-md-4 col-sm-6 text-left"><img class="img-responsive" src="assets/img/blog/thumbnails/bt1.jpg" width="600" height="275">
                             <h4 class="text-left">Heading</h4>
                             <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-default" role="button" href="#">Read more</a></div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 text-left"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                        <div class="col-lg-4 col-md-4 col-sm-6 text-left"><img class="img-responsive" src="assets/img/blog/thumbnails/bt2.jpg" width="600" height="275">
                             <h4 class="text-left">Heading</h4>
                             <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-default" role="button" href="#">Read more</a></div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 text-left"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                        <div class="col-lg-4 col-md-4 col-sm-6 text-left"><img class="img-responsive" src="assets/img/blog/thumbnails/bt3.jpg" width="600" height="275">
                             <h4 class="text-left">Heading</h4>
                             <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-default" role="button" href="#">Read more</a></div>
                     </div>
@@ -476,33 +481,14 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/Images-gallery-with-fancybox-and-masonry.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/flickity.pkgd.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
     <script src="assets/js/light-site-scripts.js"></script>
-    <script>
-        $('.toggle-style-switcher').click(function() {
-            
-            $('#style-switcher').toggleClass('visible');
-            if($('#style-switcher').hasClass('visible')) {
-
-                $(this).find('i').removeClass('fa-cog').addClass('fa-times');
-
-            }else {
-                $(this).find('i').removeClass('fa-times').addClass('fa-cog');
-
-            }
-        });
-
-        $('.color-list').on('click', 'li', function() {
-            var dataStyle = $(this).data('style');
-            $('.color-list li').removeClass('selected');
-            $(this).addClass('selected');
-        });
-
-    </script>
+    <script src="assets/js/style-customizer.js"></script>
 </body>
 
 </html>

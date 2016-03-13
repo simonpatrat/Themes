@@ -1,10 +1,47 @@
 var siteScripts = function() {
     
+    // Initialize wow.js
+    new WOW().init();
+    // set isBoxed variable
+    var isBoxed = localStorage.getItem("is_boxed");     
+    // Home image jumbotron dynamic height - Only if site hasn't the boxed layout
+    var jumboSetHeight = function() {    
+
+
+          if(typeof $('.home-image-jumbo') != 'undefined' && $('.home-image-jumbo').length > 0) {
+            
+            var $jumbo = $('.home-image-jumbo');
+            var headerH = $jumbo.offset().top;
+            var winH = $(window).height(); 
+
+            if(!$('.whole-site').hasClass('boxed')) {
+              $jumbo.css('height', winH - headerH +'px')
+            } else {
+              $jumbo.css('height', 'auto');
+            }         
+          
+
+          }else {
+            return;
+          }
+
+
+    };
+
+    jumboSetHeight();
+
+    var resized;
+
+    $(window).on('resize orientationChanged', function(){
+        clearTimeout(resized);
+        resized = setTimeout(jumboSetHeight, 200);
+
+    });
     $('[data-toggle="tooltip"]').tooltip();
     
     $('#mainNav').affix({
       offset: {
-        top: 100
+        top: 140
       }
     });
     
@@ -32,9 +69,9 @@ var siteScripts = function() {
     });
 
     // Detect if site is "boxed" on load
-    var isBoxed = localStorage.getItem("is_boxed"); 
     if(typeof isBoxed != 'undefined' && isBoxed === "true") {
         $('.whole-site').addClass('boxed');
+        jumboSetHeight();
     }
     // Data Change buttons
     $(document).on('click', '[data-change]', function(event) {
@@ -46,11 +83,14 @@ var siteScripts = function() {
                 if($('.whole-site').hasClass('boxed')) {
                     $('.whole-site').removeClass('boxed');
                     // Store value in localStorage
-                    localStorage.setItem("is_boxed", false);                    
+                    localStorage.setItem("is_boxed", false);
+                    jumboSetHeight();                 
                 }else {
                     $('.whole-site').addClass('boxed');
                     // Store value in localStorage
                     localStorage.setItem("is_boxed", true);
+                    $('.home-image-jumbo').css('height', 'auto');
+                    jumboSetHeight();
                 }
                 
             break;
@@ -61,6 +101,13 @@ var siteScripts = function() {
                     scrollTop : 0
                 },1000);
             break;
+            case 'scrollToTopContent':
+                var $win = $('html, body');
+                var $topContent = $('#top-content') || [];
+                $win.animate({
+                    scrollTop : ($topContent.offset().top - 100) +'px'
+                },1000);
+            break;
                 
             default:
                 return false;
@@ -68,8 +115,9 @@ var siteScripts = function() {
         }
     });    
     
-    // Google map init
 
+
+    // Google map init
     initMap();
 
 

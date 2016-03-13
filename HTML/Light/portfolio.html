@@ -14,10 +14,38 @@
     <link rel="stylesheet" href="assets/css/Team-preview-thumbnails-carousel.css">
     <link rel="stylesheet" href="assets/css/flickity.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" data-style-switcher-color="true" href="styles.css">
 </head>
 
 <body>
+    <div id="style-switcher">
+        <button class="btn toggle-style-switcher"><i class="fa fa-cog"></i></button>
+        <header>
+            <h4 class="text-muted">Customize styles</h4>
+        </header>
+        <div class="style-switcher-inner">
+            <div class="change-colors">
+                <h5>Change colors</h5>
+                <ul class="color-list list-unstyled list-inline">
+                    <li class="black selected" data-style="black" title="Black"><i class="fa fa-tint"></i></li>
+                    <li class="light-blue" data-style="light-blue" title="Light Blue"><i class="fa fa-tint"></i></li>
+                    <li class="dark-blue" data-style="dark-blue" title="Dark Blue"><i class="fa fa-tint"></i></li>
+                    <li class="red" data-style="red" title="Red"><i class="fa fa-tint"></i></li>
+                    <li class="orange" data-style="orange" title="Orange"><i class="fa fa-tint"></i></li>
+                    <li class="green" data-style="green" title="Green"><i class="fa fa-tint"></i></li>
+                    <!--<li class="violet" data-style="violet" title="Violet"><i class="fa fa-tint"></i></li>-->
+                </ul>
+            </div>
+            <hr>
+            <div class="change-layout">
+                <h5>Change Layout</h5>
+                <button class="btn btn-default active" data-change="boxed"><i class="fa fa-angle-left"></i> Wide <i class="fa fa-angle-right"></i></button>
+                <button class="btn btn-default" data-change="boxed"><i class="fa fa-angle-right"></i> Boxed <i class="fa fa-angle-left"></i></button>
+            </div>
+            <hr>
+        </div>
+    </div>
+
     <div class="whole-site">
         <div class="hidden-xs info-bar">
             <div class="container">
@@ -59,7 +87,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4"></div>
-                    <div class="col-md-4 col-sm-4 no-padding"><a href="index.html" class="main-logo"> Brand Logo</a></div>
+                    <div class="col-md-4 col-sm-4 no-padding"><a href="index.html" class="main-logo">Light <small>Html Theme</small></a></div>
                     <div class="col-md-4 col-sm-4"></div>
                 </div>
             </div>
@@ -380,12 +408,14 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/Images-gallery-with-fancybox-and-masonry.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/flickity.pkgd.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
     <script src="assets/js/light-site-scripts.js"></script>
+    <script src="assets/js/style-customizer.js"></script>
 </body>
 
 </html>
