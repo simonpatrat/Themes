@@ -1,7 +1,7 @@
 #style-switcher {
     position: fixed;
     left: 0;
-    top: 25%;
+    top: 35%;
     width: 240px;
     min-height: 340px;
     background: #fff;
@@ -20,6 +20,20 @@
 
     &.visible {
         transform: translateX(0);
+    }
+
+    .btn, .btn.btn-default {
+        border: 2px solid #ccc !important;
+        background: #fff;
+        color: #343434;
+
+        &:hover, &:active, &:focus {
+            color: #000;
+        }
+
+        &.toggle-style-switcher {
+            border: none !important;
+        }
     }
 }
 
@@ -60,36 +74,36 @@
             }
 
             &.black {
-                background: #000;
+                background: @main-color-default;
             }
 
             &.light-blue {
-                background: #3498db;
+                background: @main-color-light-blue;
             }
 
             &.dark-blue {
-                background: #2c3e50;
+                background: @main-color-dark-blue;
             }
 
             &.red {
-                background: #e74c3c;
+                background: @main-color-red;
             }
             &.orange {
-                background: #f39c12;                
+                background: @main-color-orange;                
             }
 
             &.green {
-                background: #2ecc71;
+                background: @main-color-green;
             }
 
             &.violet {
-                background: #8e44ad;
+                background: @main-color-violet;
             }
         }
     } 
 }
 
-.toggle-style-switcher {
+.toggle-style-switcher, .btn.toggle-style-switcher, .btn.btn.default.toggle-style-switcher {
     position: absolute;
     right: -36px;
     height: 38px;

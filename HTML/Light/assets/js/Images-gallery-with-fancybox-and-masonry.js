@@ -35,6 +35,8 @@ var bswIsotope = function(grid, item, colWidth) {
     $('.folio-filter-container').on( 'click', '.btn', function(event) {
       event.preventDefault();
       var filterValue = $(this).attr('data-filter');
+  /*    $('.bsw-masonry-item .thumbnail').removeClass('wow').removeClass('fadeInUp fadeIn');
+      $('.bsw-masonry-item .thumbnail').css('animation-name', '');*/
       $grid.isotope({ filter: filterValue });
       $('.folio-filter-container li').removeClass('active');
       $(this).closest('li').addClass('active');

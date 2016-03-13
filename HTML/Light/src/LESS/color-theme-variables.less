@@ -14,7 +14,7 @@
 
 
 
-@brand-primary:         @main-color-default; //#343434 by default
+@brand-primary:         @main-color-light-blue; //#343434 by default
 
 // Fonts
 @font-family-sans-serif:  'Open Sans', Helvetica, Arial, sans-serif;
@@ -22,7 +22,7 @@
 
 
 // Links
-@link-color:            lighten(@brand-primary,15%); // lighten for black themes and default - darken for color themes
+@link-color:            darken(@brand-primary,15%); // lighten for black themes and default - darken for color themes
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 10%);
 //** Link hover decoration.
@@ -38,30 +38,30 @@
 
 //== Navbar
 //Navbar brand
-@navbar-brand-link-color: #000; // #000 by default and for black theme
+@navbar-brand-link-color: @brand-primary; // #000 by default and for black theme
 
 
 // Basics of a navbar
 @navbar-default-link-color:                #343434;
-@navbar-default-link-hover-color:          #000; // #000 by default
+@navbar-default-link-hover-color:          @brand-primary; // #000 by default
 
 
 // Light Theme Special variables
-@home-jumbotron-border-top-width : 0; // 0px by default - 2px for not black color themes
-@home-jumbotron-border-top-color:  transparent; // transparent by default
+@home-jumbotron-border-top-width : 2px; // 0px by default - 2px for not black color themes
+@home-jumbotron-border-top-color:  @brand-primary; // transparent by default
 
 // Links
 
 // Buttons
-@btn-primary-bg:                 darken(@brand-primary, 10%); //darken(@brand-primary, 10%) by default
+@btn-primary-bg:                 @brand-primary; //darken(@brand-primary, 10%) by default
 
 // btn default
 @btn-default-color: #000;
-@btn-default-hover-bg: #d3fefb; // #d3fefb by default and for black theme
-@btn-default-hover-color: #000; // #000 by default and for black theme - #fff for color themes
+@btn-default-hover-bg: @brand-primary; // #d3fefb by default and for black theme
+@btn-default-hover-color: #fff; // #000 by default and for black theme - #fff for color themes
 
 //btn hero
-@btn-hero-bg: #000; // #000 by default
+@btn-hero-bg: @brand-primary; // #000 by default
 @btn-hero-color: #fff; // #fff by default
 
 // Border radius
