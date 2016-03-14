@@ -1,0 +1,118 @@
+#style-switcher {
+  position: fixed;
+  left: 0;
+  top: 35%;
+  width: 240px;
+  min-height: 340px;
+  background: #fff;
+  z-index: 100000;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  transition: all 500ms cubic-bezier(0.77, 0, 0.18, 1);
+}
+#style-switcher h4 {
+  background: #eee;
+  margin: 0 auto;
+  padding: 10px 0 10px 10px;
+  text-align: left;
+}
+#style-switcher.visible {
+  transform: translateX(0);
+}
+#style-switcher .btn,
+#style-switcher .btn.btn-default {
+  border: 2px solid #ccc !important;
+  background: #fff;
+  color: #343434;
+}
+#style-switcher .btn:hover,
+#style-switcher .btn.btn-default:hover,
+#style-switcher .btn:active,
+#style-switcher .btn.btn-default:active,
+#style-switcher .btn:focus,
+#style-switcher .btn.btn-default:focus {
+  color: #000;
+}
+#style-switcher .btn.toggle-style-switcher,
+#style-switcher .btn.btn-default.toggle-style-switcher {
+  border: none !important;
+}
+.style-switcher-inner {
+  padding: 10px;
+}
+.style-switcher-inner h5 {
+  margin: 0 auto 20px auto;
+}
+.style-switcher-inner .color-list li {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  transition: all 300ms ease;
+  vertical-align: middle;
+  margin: 2px;
+}
+.style-switcher-inner .color-list li i {
+  transition: all 300ms ease;
+}
+.style-switcher-inner .color-list li.selected {
+  box-shadow: 0 0 0 2px #bababa;
+}
+.style-switcher-inner .color-list li.selected i {
+  opacity: 0.7;
+}
+.style-switcher-inner .color-list li:hover {
+  box-shadow: 0 0 0 2px #ccc;
+}
+.style-switcher-inner .color-list li.black {
+  background: #343434;
+}
+.style-switcher-inner .color-list li.light-blue {
+  background: #3498db;
+}
+.style-switcher-inner .color-list li.dark-blue {
+  background: #2c3e50;
+}
+.style-switcher-inner .color-list li.red {
+  background: #e74c3c;
+}
+.style-switcher-inner .color-list li.orange {
+  background: #f39c12;
+}
+.style-switcher-inner .color-list li.green {
+  background: #16a085;
+}
+.style-switcher-inner .color-list li.violet {
+  background: #8e44ad;
+}
+.toggle-style-switcher,
+.btn.toggle-style-switcher,
+.btn.btn.default.toggle-style-switcher {
+  position: absolute;
+  right: -36px;
+  height: 38px;
+  line-height: 38px;
+  top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  outline: none !important;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.18, 1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.toggle-style-switcher:focus,
+.btn.toggle-style-switcher:focus,
+.btn.btn.default.toggle-style-switcher:focus,
+.toggle-style-switcher:active,
+.btn.toggle-style-switcher:active,
+.btn.btn.default.toggle-style-switcher:active {
+  outline: none;
+}
+#style-switcher.visible .toggle-style-switcher,
+#style-switcher.visible .btn.toggle-style-switcher,
+#style-switcher.visible .btn.btn.default.toggle-style-switcher {
+  right: 0;
+  box-shadow: none;
+}

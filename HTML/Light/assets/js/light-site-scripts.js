@@ -123,7 +123,10 @@ var siteScripts = function() {
     // Loader and page transition on load when images have loaded
     $('.whole-site').imagesLoaded( function() {
         // images have loaded
-        $('.loading-site').addClass('site-loaded');
+        setTimeout(function() {
+          $('.loading-site').addClass('site-loaded');
+        }, 100);
+        
     });
 
     // Google map init
@@ -166,7 +169,7 @@ function initMap() {
           position: mapOptions.center,
           icon: ' ',
           map: map,
-          labelContent: '<i class="fa fa-map-marker fa-4x" style="color:#000;"></i>',
+          labelContent: '<i class="fa fa-map-marker fa-4x bswgmap-marker" style="color:#000;"></i>',
           labelAnchor: new google.maps.Point(15, 50),
           labelClass: "labels" // the CSS class for the label      
 
