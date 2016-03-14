@@ -58,8 +58,26 @@ $(document).ready(function() {
 
     };
 
-    
     setColor();
+    if($('.whole-site').hasClass('boxed')) { 
+        $('.change-layout [data-change="boxed"]').html('<i class="fa fa-angle-left"></i> Set Wide layout <i class="fa fa-angle-right">')
+        .addClass('site-is-boxed');
+    } else {
+        $('.change-layout [data-change="boxed"]').html('<i class="fa fa-angle-right"></i> Set Boxed layout <i class="fa fa-angle-left">')
+        .removeClass('site-is-boxed').addClass('site-is-wide');          
+    }    
+    
+    $('.change-layout [data-change="boxed"]').on('click', function() {
+        
+        var $thisButton = $(this);
 
+        if($thisButton.hasClass('site-is-boxed')) {
+
+            $thisButton.html('<i class="fa fa-angle-right"></i> Set Boxed layout <i class="fa fa-angle-left">').removeClass('site-is-boxed').addClass('site-is-wide'); 
+        } else {
+
+            $thisButton.html('<i class="fa fa-angle-left"></i> Set Wide layout <i class="fa fa-angle-right">').removeClass('site-is-wide').addClass('site-is-boxed');           
+        }
+    });
 
 });

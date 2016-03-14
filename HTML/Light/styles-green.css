@@ -6841,7 +6841,7 @@ body.bswjs .loading-site.site-loaded {
   transform: scaleX(1);
 }
 .map-container .bswgmap-marker {
-  color: #16a085;
+  color: #16a085 !important;
 }
 * {
   outline: none !important;
