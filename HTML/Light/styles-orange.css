@@ -7826,3 +7826,6 @@ textarea.form-control {
 .blog-posts-list .additional-posts-list-inner [class^="col-"]:nth-child(2n+1) {
   clear: left;
 }
+.list-group-item.active a {
+  color: #fff;
+}

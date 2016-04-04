@@ -52,6 +52,10 @@ $(document).ready(function() {
             $('body').attr('data-color-style', colorStyle);
             $('.color-list li').removeClass('selected');
             $(this).addClass('selected');
+            
+            $(document).trigger('stylesChanged');
+
+
             return false;
         }); 
 

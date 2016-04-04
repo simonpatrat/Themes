@@ -3,6 +3,8 @@ document.body.className += " bswjs";
 
 var siteScripts = function() {
 
+    
+
     // Initialize wow.js
     new WOW().init();
     // set isBoxed variable
@@ -128,6 +130,32 @@ var siteScripts = function() {
         }, 100);
         
     });
+
+    // Flikity init
+
+    var flikityInit = function() {
+      $('._bsw-thumbnail-carousel').flickity({
+        // options
+        "cellAlign": "left",
+        "autoPlay": false,
+        "imagesLoaded": true
+      });
+
+    };
+
+    flikityInit();
+
+    $(document).on('stylesChanged', function() {
+      //console.log('Styles changed');
+
+      flikityInit();  
+
+      $(window).trigger('resize');
+
+      $('._bsw-thumbnail-carousel').flickity('resize').flickity('reposition');    
+    });
+
+    $(document).trigger('stylesChanged');
 
     // Google map init
     initMap();
