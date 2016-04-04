@@ -1125,3 +1125,25 @@ textarea.form-control{
 .loading-site{
   display:none;
 }
+
+
+// Blog posts list 
+
+.blog-posts-list {
+  .additional-posts-list-inner {
+    [class^="col-"] {
+
+      &:nth-child(2n+1){
+
+        clear: left;
+      }
+    }
+  }
+}
+
+// Blog article / post
+
+// Category list
+.list-group-item.active a {
+  color: #fff;  
+} 

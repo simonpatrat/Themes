@@ -6818,7 +6818,7 @@ body.bswjs .loading-site {
   opacity: 1;
   display: block;
   transform: translateY(0);
-  transition: all 1000ms none;
+  transition: none;
   z-index: 900000000;
 }
 body.bswjs .loading-site.site-loaded {
@@ -7822,4 +7822,7 @@ textarea.form-control {
 }
 .loading-site {
   display: none;
+}
+.blog-posts-list .additional-posts-list-inner [class^="col-"]:nth-child(2n+1) {
+  clear: left;
 }
