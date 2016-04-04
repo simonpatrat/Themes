@@ -1,0 +1,155 @@
+// out: null
+// main:  site.less
+
+//Grid system
+@maxwidth : 1200px;
+@maxwidthlarge : 1680px;
+@centredColWidth : 640px;
+
+
+@col1 : 100% /12;
+@col2 : 100% /6;
+@col3 : 100% /4;
+@col4 : 100% /3;
+@col5 : 100% / 2.4;
+@col6 : 100% /2;
+@col7 : 100% / 1.714285714285714;
+@col8 : 100% / 1.5;
+@col9 : 100% / 1.333333333333333;
+@col10 : 100% / 1.2;
+@col11 : 100% / 1.090909090909091;
+@col12 : 100%;
+
+
+// Grid classes oui oui oui
+
+
+.container{
+    display: block;
+    max-width: @maxwidth;
+    margin: auto;
+
+    &.full-width{
+        max-width: 100%;
+    }
+    
+    &.left-content{
+        margin-left: 0;
+    }
+    
+    &.large-limited{
+        max-width: @maxwidthlarge;
+    }
+    
+    &:before, &:after, &::before, &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+}
+
+
+.row{
+    width: 100%;
+    &:before, &:after, &::before, &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+
+.col{
+    display: block;
+    float: left;
+/*    min-height: 60px;
+    background: #ccc;
+    border: 1px solid #fff;*/
+}
+
+.col1{
+    width: @col1;
+}
+
+.col2{
+    width: @col2;
+}
+
+.col3{
+    width: @col3;
+}
+
+.col4{
+    width: @col4;
+}
+
+.col5{
+    width: @col5;
+}
+
+.col6{
+    width: @col6;
+}
+
+.col7{
+    width: @col7;
+}
+
+.col8{
+    width: @col8;
+}
+
+.col9{
+    width: @col9;
+}
+
+.col10{
+    width: @col10;
+}
+
+.col11{
+    width: @col11;
+}
+
+.col12{
+    width: @col12;
+}
+
+.col-centered{
+    display:block;
+    content: '';
+    max-width: @centredColWidth;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 800px){
+    .col{
+        width: 100%;
+        float: none;
+        
+        &.m-sm{
+            width: 50%;
+            float: left;
+        }
+        
+        &.m-xsm{
+            width: 25%;
+            float: left;
+        }
+        
+        &.m-xxsm{
+            width: 12.5%;
+            float: left;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .col{
+        &.m-sm, &.m-xsm, &.m-xxsm{
+            width: 100%;
+            float: none;
+        }
+    }
+}
