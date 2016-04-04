@@ -1,2 +1,4 @@
-# SeaLight
-Html theme
+# Mare Lumen
+Html theme by Simon Patrat
+
+
